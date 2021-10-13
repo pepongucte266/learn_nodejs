@@ -4,6 +4,8 @@
     "description": "",
     "main": "src/index.js",
     "scripts": {
+        "pre-commit": "lint-staged",
+        "prepare": "husky install",
         "bea": "lint-staged",
         "start": "nodemon --inspect src/index.js",
         "watch": "sass -w src/resources/scss/app.scss src/public/css/app.css",
